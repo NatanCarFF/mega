@@ -1,0 +1,75 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradiente de fundo */
+    color: #fff;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+}
+
+h1 {
+    color: #4CAF50; /* Verde vibrante */
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.1em;
+    margin-bottom: 25px;
+}
+
+.numeros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px; /* Espaçamento entre os círculos */
+    margin-bottom: 30px;
+    min-height: 70px; /* Garante um espaço mínimo */
+}
+
+.numero-bola {
+    width: 60px;
+    height: 60px;
+    background-color: #f44336; /* Vermelho vibrante */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+}
+
+.numero-bola:hover {
+    transform: translateY(-5px);
+}
+
+button {
+    background-color: #4CAF50; /* Verde para o botão */
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
